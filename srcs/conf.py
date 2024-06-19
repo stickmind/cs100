@@ -77,7 +77,7 @@ myst_heading_anchors = 3
 #
 
 html_theme = "furo"
-html_title = "CS101 文档"
+html_title = "CS100: 编程初阶"
 language = "zh-CN"
 
 html_static_path = ["_static"]
