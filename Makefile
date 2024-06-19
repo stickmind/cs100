@@ -28,9 +28,9 @@ serve:
 	
 publish:
 	make clean && make build
-	git add . && git commit -m "update" && git push origin main
+	git add . && git commit -m "update" && git push origin gh-pages
 
 fix:
 	make clean && make build
-	git add . && git commit --amend --no-edit && git push origin main --force
+	git add . && git commit --amend --no-edit && git push origin gh-pages --force
 
