@@ -3,11 +3,11 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" /><link rel="prev" title="第一讲 课程介绍" href="../index.html" />
+<link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" /><link rel="next" title="第二讲 函数" href="../../02_functions/index.html" /><link rel="prev" title="第一讲 介绍" href="../index.html" />
 
     
     <link rel="shortcut icon" href="_static/favicon.ico"/>
-        <title>实验 0：环境搭建 - CS100：编程初阶</title>
+        <title>实验 0：环境搭建 - CS100：Python 编程方法学</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=a746c00c" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=135e06be" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
@@ -132,7 +132,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="../../index.html"><div class="brand">CS100：编程初阶</div></a>
+      <a href="../../index.html"><div class="brand">CS100：Python 编程方法学</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -155,7 +155,7 @@
       <div class="sidebar-sticky"><a class="sidebar-brand" href="../../index.html">
   
   
-  <span class="sidebar-brand-text">CS100：编程初阶</span>
+  <span class="sidebar-brand-text">CS100：Python 编程方法学</span>
   
 </a><form class="sidebar-search-container" method="get" action="../../search.html" role="search">
   <input class="sidebar-search" placeholder="搜索" name="q" aria-label="Search">
@@ -164,10 +164,11 @@
 </form>
 <div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
   <ul class="current">
-<li class="toctree-l1 current has-children"><a class="reference internal" href="../index.html">第一讲 课程介绍</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle navigation of 第一讲 课程介绍</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l1 current has-children"><a class="reference internal" href="../index.html">第一讲 介绍</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle navigation of 第一讲 介绍</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
 <li class="toctree-l2 current current-page"><a class="current reference internal" href="#">实验 0：环境搭建</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../../02_functions/index.html">第二讲 函数</a></li>
 </ul>
 
 </div>
@@ -204,7 +205,6 @@
         <article role="main">
           <section class="tex2jax_ignore mathjax_ignore" id="id1">
 <h1>实验 0：环境搭建<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
-<p><em>参考 <a class="reference download internal" download="" href="../../_downloads/2b7142d248da2053f6db175c87903226/lab00.html"><span class="xref download myst">CS 61A Fall 2020 - Lab 00: Getting Started</span></a></em></p>
 <p>本次实验介绍如何使用你的计算机完成课程作业，也会介绍一些 Python 的基础知识。</p>
 <p>实验文档较长，但是大多是一些安装操作以及一些使用说明。熟练使用这些工具，可以更好地帮助你完成课程内容。</p>
 <section id="id2">
@@ -225,13 +225,13 @@
 </section>
 <section id="id3">
 <h2>任务二：使用终端<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
-<p>安装完成后，可以使用系统自带的终端工具（macOS 的“终端”，Windows 的 PowerShell）检查 Python 是否安装正确。</p>
+<p>安装完成后，可以使用系统自带的终端工具（macOS/Linux 的“终端”或 Terminal，Windows 的 PowerShell）检查 Python 是否安装正确。</p>
 <p>打开终端，输入 <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">--version</span></code>：</p>
 <p><img alt="python-version" class="align-center" src="../../_images/python-version.png" /></p>
 <div class="note admonition">
 <p class="admonition-title">补充：环境变量</p>
 <p>如果你的终端无法找到 <code class="docutils literal notranslate"><span class="pre">python</span></code> 命令，很可能是环境变量 <code class="docutils literal notranslate"><span class="pre">PATH</span></code> 没有设置正确。</p>
-<p>在 PowerShell 中可以使用 <code class="docutils literal notranslate"><span class="pre">$env:PATH</span></code> 打印出系统已存在的路径信息；macOS 终端可以使用 <code class="docutils literal notranslate"><span class="pre">echo</span> <span class="pre">$PAHT</span></code> 命令进行打印。</p>
+<p>在 PowerShell 中可以使用 <code class="docutils literal notranslate"><span class="pre">$env:PATH</span></code> 打印出系统已存在的路径信息；macOS/Linux 终端可以使用 <code class="docutils literal notranslate"><span class="pre">echo</span> <span class="pre">$PATH</span></code> 命令进行打印。</p>
 <p>至于环境变量 <code class="docutils literal notranslate"><span class="pre">PATH</span></code> 的概念以及如何设置，大家可以通过搜索引擎自行查找相关的教程。</p>
 </div>
 <p>如果一切安装就绪，我们就可以尝试练习使用终端，特别是一些文件管理相关的操作。</p>
@@ -246,12 +246,125 @@
 </div>
 <p>注意，某些系统可能需要你输入其他别名才可以进入，例如 <code class="docutils literal notranslate"><span class="pre">python3</span></code>，<code class="docutils literal notranslate"><span class="pre">py</span></code> 等。</p>
 <p>你可以在 <code class="docutils literal notranslate"><span class="pre">&gt;&gt;&gt;</span></code> 后面输入 Python 代码，尝试练习课程中介绍过的一些表达式。</p>
-<p>退出解释器，可以输入 <code class="docutils literal notranslate"><span class="pre">exit()</span></code> 函数。也可以使用终端快捷键，例如 PowerShell 可以输入 <code class="docutils literal notranslate"><span class="pre">Ctrl-Z</span></code>；macOS 终端可以输入 <code class="docutils literal notranslate"><span class="pre">Ctrl-D</span></code>。</p>
+<p>退出解释器，可以输入 <code class="docutils literal notranslate"><span class="pre">exit()</span></code> 函数。也可以使用终端快捷键，例如 PowerShell 可以输入 <code class="docutils literal notranslate"><span class="pre">Ctrl-Z</span></code>；macOS/Linux 终端可以输入 <code class="docutils literal notranslate"><span class="pre">Ctrl-D</span></code>。</p>
 </section>
 <section id="id5">
 <h3>用户目录<a class="headerlink" href="#id5" title="Link to this heading">#</a></h3>
-<p>打开终端时，默认情况下，你应该处在用户目录，即环境变量 <code class="docutils literal notranslate"><span class="pre">HOME</span></code> 表示的路径。PowerShell 会直接显示当前的路径，例如 <code class="docutils literal notranslate"><span class="pre">PS</span> <span class="pre">C:\Users\cs100</span></code>。</p>
-<p>macOS 终端会显示 <code class="docutils literal notranslate"><span class="pre">~</span></code> 符号，该符号通常可以替代 <code class="docutils literal notranslate"><span class="pre">HOME</span></code> 变量。在 macOS 终端可以输入 <code class="docutils literal notranslate"><span class="pre">echo</span> <span class="pre">$HOME</span></code> 显示用户目录的路径。</p>
+<p>打开终端时，默认情况下，你应该处在<strong>用户目录</strong>（home directory）或家目录，即环境变量 <code class="docutils literal notranslate"><span class="pre">HOME</span></code> 表示的路径。PowerShell 会直接显示当前的路径，例如 <code class="docutils literal notranslate"><span class="pre">PS</span> <span class="pre">C:\Users\cs100</span></code>。</p>
+<p>macOS/Linux 终端会显示 <code class="docutils literal notranslate"><span class="pre">~</span></code> 符号，该符号通常可以替代 <code class="docutils literal notranslate"><span class="pre">HOME</span></code> 变量。在 macOS/Linux 终端可以输入 <code class="docutils literal notranslate"><span class="pre">echo</span> <span class="pre">$HOME</span></code> 显示用户目录的路径。</p>
+</section>
+<section id="id6">
+<h3>文件列表<a class="headerlink" href="#id6" title="Link to this heading">#</a></h3>
+<p>第一个需要你掌握的命令是 <code class="docutils literal notranslate"><span class="pre">ls</span></code>，尝试在终端输入：</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ls</span>
+</pre></div>
+</div>
+<p>命令 <code class="docutils literal notranslate"><span class="pre">ls</span></code> 是英文单词“list”的缩写，用于列出当前目录中的所有文件和文件夹。所谓“目录”（directory）就是文件夹的另一个别名。由于你当前正处在用户目录，执行完上述命令后，你会看到该目录包含的所有内容。</p>
+</section>
+<section id="id7">
+<h3>切换目录<a class="headerlink" href="#id7" title="Link to this heading">#</a></h3>
+<p>可以使用 <code class="docutils literal notranslate"><span class="pre">cd</span></code> 命令切换到另一个目录，该命令是“change directory”的缩写。</p>
+<p>首先确保你仍然处在用户目录，或者使用 <code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">~</span></code> 命令切换到用户目录。然后再尝试执行以下命令，进入桌面文件夹：</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="n">Desktop</span>
+</pre></div>
+</div>
+<p>尝试使用 <code class="docutils literal notranslate"><span class="pre">ls</span></code> 命令检查桌面文件夹的内容。</p>
+<p>如果你不在用户目录，也可以尝试更快捷的操作，例如执行 <code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">~/Desktop</span></code> 可以从任何一个文件夹切换到桌面文件夹。</p>
+<p>此时，再返回到用户目录也有多种方法，总结如下：</p>
+<ul class="simple">
+<li><p>命令 <code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">..</span></code>：使用两个点 <code class="docutils literal notranslate"><span class="pre">..</span></code> 表示上一层目录（父级目录）。此时你处在桌面目录，上一层目录恰好就是用户目录。</p></li>
+<li><p>命令 <code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">~</span></code>：上面介绍过 <code class="docutils literal notranslate"><span class="pre">~</span></code> 表示用户目录，所以可以使用该符号直接定位到用户目录。</p></li>
+<li><p>命令 <code class="docutils literal notranslate"><span class="pre">cd</span></code>：在 macOS/Linux 终端上，直接输入该命令，默认情况下会跳转到用户目录，但是 PowerShell 不起作用。</p></li>
+</ul>
+</section>
+<section id="id8">
+<h3>新建文件夹<a class="headerlink" href="#id8" title="Link to this heading">#</a></h3>
+<p>命令 <code class="docutils literal notranslate"><span class="pre">mkdir</span></code> 是“make directory”的缩写。尝试在桌面文件夹创建一个 <code class="docutils literal notranslate"><span class="pre">cs61a</span></code> 文件夹，用于保存课程所有作业：</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">mkdir</span> <span class="n">cs61a</span>
+</pre></div>
+</div>
+<p>观察桌面，你会发现一个名为 <code class="docutils literal notranslate"><span class="pre">cs61a</span></code> 的文件夹。也可以通过 <code class="docutils literal notranslate"><span class="pre">ls</span></code> 命令，在终端查看该目录。</p>
+<p>你还可以进入 <code class="docutils literal notranslate"><span class="pre">cs61a</span></code> 文件夹创建更多分类文件夹，将课程中的项目和实验分类存储：</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="o">~/</span><span class="n">Desktop</span><span class="o">/</span><span class="n">cs61a</span>
+<span class="n">mkdir</span> <span class="n">projects</span>
+<span class="n">mkdir</span> <span class="n">labs</span>
+</pre></div>
+</div>
+<p>如果你想新建一个文件而不是目录，可以使用 <code class="docutils literal notranslate"><span class="pre">touch</span></code> 命令，例如命令 <code class="docutils literal notranslate"><span class="pre">touch</span> <span class="pre">test.py</span></code> 将创建 <code class="docutils literal notranslate"><span class="pre">test.py</span></code> 文件。</p>
+</section>
+<section id="id9">
+<h3>移动文件<a class="headerlink" href="#id9" title="Link to this heading">#</a></h3>
+<p>如果你已经把 <code class="docutils literal notranslate"><span class="pre">lab00.zip</span></code> 下载到 <code class="docutils literal notranslate"><span class="pre">~\Downloads</span></code> 目录，可以使用如下命令移动该文件到我们创建的桌面项目文件夹中。</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">mv</span> <span class="o">~/</span><span class="n">Downloads</span><span class="o">/</span><span class="n">lab00</span><span class="o">.</span><span class="n">zip</span> <span class="o">~/</span><span class="n">Desktop</span><span class="o">/</span><span class="n">cs61a</span><span class="o">/</span><span class="n">labs</span>
+</pre></div>
+</div>
+<p>命令 <code class="docutils literal notranslate"><span class="pre">mv</span></code> 是“move”的缩写，该命令将文件 <code class="docutils literal notranslate"><span class="pre">lab00.zip</span></code> 移动到 <code class="docutils literal notranslate"><span class="pre">~/Desktop/cs61a/labs</span></code> 中。</p>
+<div class="note admonition">
+<p class="admonition-title">总结</p>
+<p>总结一下我们学习过的命令：</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">ls</span></code> 列出当前目录内容</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">&lt;path</span> <span class="pre">to</span> <span class="pre">directory&gt;</span></code> 切换到指定文件夹</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">mkdir</span> <span class="pre">&lt;directory</span> <span class="pre">name&gt;</span></code> 使用指定名称创建一个新的文件夹</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">touch</span> <span class="pre">&lt;file</span> <span class="pre">name&gt;</span></code> 使用指定名称创建一个新的文件</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">mv</span> <span class="pre">&lt;source</span> <span class="pre">path&gt;</span> <span class="pre">&lt;destination</span> <span class="pre">path&gt;</span></code> 将指定的源文件/目录，移动到指定的目标路径</p></li>
+</ul>
+<p>以上命令都来自 Unix 操作系统，熟练使用这些命令可以更好地完成课程内容。习惯了鼠标操作，这些内容看起来可能多此一举，但是在未来的进阶课程中，这些技能将给你带来很多便利，好好练习吧！</p>
+</div>
+</section>
+</section>
+<section id="id10">
+<h2>任务三：Python 基础<a class="headerlink" href="#id10" title="Link to this heading">#</a></h2>
+<section id="id11">
+<h3>表达式和语句<a class="headerlink" href="#id11" title="Link to this heading">#</a></h3>
+<p>程序由表达式和语句构成。表达式（expression）是一个代码片段，但其本质是一个<strong>值</strong>；语句（statement）由一行或多行代码构成，在程序中执行具体的<strong>动作</strong>。</p>
+<p>在 Python 解释器中输入表达式后，其值会显示在下面。当你阅读下面的示例时，可以尝试在你的 Python 解释器中输入。</p>
+<p>在本课程中，你将会学习到多种不同的表达式和语句。但是现在，为了完成本次实验，需要你先探索一部分。</p>
+</section>
+<section id="id12">
+<h3>简单表达式<a class="headerlink" href="#id12" title="Link to this heading">#</a></h3>
+<p>简单表达式（primitive expression）只需要一步就可以完成计算，例如数字和布尔值，这些表达式的值就是其本身：</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="mi">3</span>
+<span class="go">3</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="mf">12.5</span>
+<span class="go">12.5</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kc">True</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+</section>
+<section id="id13">
+<h3>算术表达式<a class="headerlink" href="#id13" title="Link to this heading">#</a></h3>
+<p>数字可以和算术运算符进行组合，从而构成更复杂的表达式。</p>
+<p>对于算术运算符，除了加法 <code class="docutils literal notranslate"><span class="pre">+</span></code>（addition），减法 <code class="docutils literal notranslate"><span class="pre">-</span></code>（subtraction），乘法 <code class="docutils literal notranslate"><span class="pre">*</span></code>（multiplication），求幂 <code class="docutils literal notranslate"><span class="pre">**</span></code>（exponentiation），还有三种不同的除法运算符需要牢记：</p>
+<ul class="simple">
+<li><p>浮点除法 <code class="docutils literal notranslate"><span class="pre">/</span></code>（floating point division）：用第二个数字除第一个数字，得到的结果带有小数点（即使在均分的情况下，也是如此）。</p></li>
+<li><p>取整 <code class="docutils literal notranslate"><span class="pre">//</span></code>（floor division）：用第二个数字除第一个数字并向下取整，得到的结果是一个整型（integer）。</p></li>
+<li><p>取余 <code class="docutils literal notranslate"><span class="pre">%</span></code>（modulo）：得到的结果是执行完除法留下的正余数。一般来说，负值相关的求余没太大意义，不建议深究。</p></li>
+</ul>
+<p>括号（parentheses）可以用于组合子表达式，并改变计算顺序；表达式的计算顺序遵循 PEMDAS 顺序，即各运算符英文首字母缩写，P 表示 parentheses。</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="mi">7</span> <span class="o">/</span> <span class="mi">4</span>
+<span class="go">1.75</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="p">(</span><span class="mi">2</span> <span class="o">+</span> <span class="mi">6</span><span class="p">)</span> <span class="o">/</span> <span class="mi">4</span>
+<span class="go">2.0</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="mi">7</span> <span class="o">//</span> <span class="mi">4</span>        <span class="c1"># Floor division (rounding down)</span>
+<span class="go">1</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="mi">7</span> <span class="o">%</span> <span class="mi">4</span>         <span class="c1"># Modulus (remainder of 7 // 4)</span>
+<span class="go">3</span>
+</pre></div>
+</div>
+</section>
+<section id="id14">
+<h3>赋值语句<a class="headerlink" href="#id14" title="Link to this heading">#</a></h3>
+<p>赋值语句包含一个变量名和一个表达式。计算表达式，将值通过赋值运算符 <code class="docutils literal notranslate"><span class="pre">=</span></code> 绑定到左边的变量名，从而改变程序的状态。</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">a</span> <span class="o">=</span> <span class="p">(</span><span class="mi">100</span> <span class="o">+</span> <span class="mi">50</span><span class="p">)</span> <span class="o">//</span> <span class="mi">2</span>
+</pre></div>
+</div>
+<p>此时，如果评估变量 <code class="docutils literal notranslate"><span class="pre">a</span></code> 的值，解释器将会显示 <code class="docutils literal notranslate"><span class="pre">75</span></code>：</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">a</span>
+<span class="go">75</span>
+</pre></div>
+</div>
 </section>
 </section>
 </section>
@@ -261,7 +374,15 @@
       <footer>
         
         <div class="related-pages">
-          
+          <a class="next-page" href="../../02_functions/index.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>下一页</span>
+                </div>
+                <div class="title">第二讲 函数</div>
+              </div>
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+            </a>
           <a class="prev-page" href="../index.html">
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
               <div class="page-info">
@@ -269,7 +390,7 @@
                   <span>上一页</span>
                 </div>
                 
-                <div class="title">第一讲 课程介绍</div>
+                <div class="title">第一讲 介绍</div>
                 
               </div>
             </a>
@@ -305,6 +426,17 @@
 <li><a class="reference internal" href="#id3">任务二：使用终端</a><ul>
 <li><a class="reference internal" href="#id4">Python 解释器</a></li>
 <li><a class="reference internal" href="#id5">用户目录</a></li>
+<li><a class="reference internal" href="#id6">文件列表</a></li>
+<li><a class="reference internal" href="#id7">切换目录</a></li>
+<li><a class="reference internal" href="#id8">新建文件夹</a></li>
+<li><a class="reference internal" href="#id9">移动文件</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id10">任务三：Python 基础</a><ul>
+<li><a class="reference internal" href="#id11">表达式和语句</a></li>
+<li><a class="reference internal" href="#id12">简单表达式</a></li>
+<li><a class="reference internal" href="#id13">算术表达式</a></li>
+<li><a class="reference internal" href="#id14">赋值语句</a></li>
 </ul>
 </li>
 </ul>
