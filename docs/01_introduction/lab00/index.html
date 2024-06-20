@@ -207,15 +207,51 @@
 <p><em>参考 <a class="reference download internal" download="" href="../../_downloads/2b7142d248da2053f6db175c87903226/lab00.html"><span class="xref download myst">CS 61A Fall 2020 - Lab 00: Getting Started</span></a></em></p>
 <p>本次实验介绍如何使用你的计算机完成课程作业，也会介绍一些 Python 的基础知识。</p>
 <p>实验文档较长，但是大多是一些安装操作以及一些使用说明。熟练使用这些工具，可以更好地帮助你完成课程内容。</p>
-<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=427281261&bvid=BV1s3411G7yM&cid=743312521&p=2&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"  width="100%" height="480"></iframe>
 <section id="id2">
 <h2>初始文件<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
 <p>下载文件 <a class="reference download internal" download="" href="../../_downloads/ef72436b87beece632480fccb0885cfc/lab00.zip"><span class="xref download myst">lab00.zip</span></a>，该文件包含实验的初始代码以及用于测试的 <code class="docutils literal notranslate"><span class="pre">Ok</span></code> 工具。</p>
 </section>
+<section id="python">
+<h2>任务一：安装 Python<a class="headerlink" href="#python" title="Link to this heading">#</a></h2>
+<p>Python 3 是本课程主要使用的编程语言，根据下述步骤安装 Python 3 解释器。</p>
+<div class="attention admonition">
+<p class="admonition-title">注意</p>
+<p>建议和课程保持一致，使用 Python 3.8 版本。</p>
+<p>版本不一致可能会出现一些意想不到的报错，初学者不太容易解决。</p>
+</div>
+<p>对于 Windows 系统用户，可以下载 <a class="reference external" href="https://web.archive.org/web/20210118094526/https://www.python.org/ftp/python/3.8.3/python-3.8.3-amd64.exe">Python 3 (the Windows x86-64 executable installer)</a>。双击安装包，根据提示进行安装即可。需要注意的是，安装过程中需要勾选“Add Python 3.x to PATH”选项，将 Python 添加到系统的 <code class="docutils literal notranslate"><span class="pre">PATH</span></code> 路径中：</p>
+<p><img alt="python-installer" class="align-center" src="../../_images/python-installer-win.png" /></p>
+<p>对于 macOS 系统用户，可以下载 <a class="reference external" href="https://web.archive.org/web/20210118094526/https://www.python.org/ftp/python/3.8.3/python-3.8.3-macosx10.9.pkg">Python 3 (64-bit)</a>。双击打开软件包，根据提示一步步安装就好。</p>
+</section>
 <section id="id3">
-<h2>软件安装<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
+<h2>任务二：使用终端<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
+<p>安装完成后，可以使用系统自带的终端工具（macOS 的“终端”，Windows 的 PowerShell）检查 Python 是否安装正确。</p>
+<p>打开终端，输入 <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">--version</span></code>：</p>
+<p><img alt="python-version" class="align-center" src="../../_images/python-version.png" /></p>
+<div class="note admonition">
+<p class="admonition-title">补充：环境变量</p>
+<p>如果你的终端无法找到 <code class="docutils literal notranslate"><span class="pre">python</span></code> 命令，很可能是环境变量 <code class="docutils literal notranslate"><span class="pre">PATH</span></code> 没有设置正确。</p>
+<p>在 PowerShell 中可以使用 <code class="docutils literal notranslate"><span class="pre">$env:PATH</span></code> 打印出系统已存在的路径信息；macOS 终端可以使用 <code class="docutils literal notranslate"><span class="pre">echo</span> <span class="pre">$PAHT</span></code> 命令进行打印。</p>
+<p>至于环境变量 <code class="docutils literal notranslate"><span class="pre">PATH</span></code> 的概念以及如何设置，大家可以通过搜索引擎自行查找相关的教程。</p>
+</div>
+<p>如果一切安装就绪，我们就可以尝试练习使用终端，特别是一些文件管理相关的操作。</p>
 <section id="id4">
-<h3>终端<a class="headerlink" href="#id4" title="Link to this heading">#</a></h3>
+<h3>Python 解释器<a class="headerlink" href="#id4" title="Link to this heading">#</a></h3>
+<p>在终端输入 <code class="docutils literal notranslate"><span class="pre">python</span></code>，你将进入 Python 解释器：</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">PS</span> <span class="n">C</span><span class="p">:</span>\<span class="n">Users</span>\<span class="n">cs100</span><span class="o">&gt;</span> <span class="n">python</span>
+<span class="n">Python</span> <span class="mf">3.8.3</span> <span class="p">(</span><span class="n">tags</span><span class="o">/</span><span class="n">v3</span><span class="mf">.8.3</span><span class="p">:</span><span class="mi">6</span><span class="n">f8c832</span><span class="p">,</span> <span class="n">May</span> <span class="mi">13</span> <span class="mi">2020</span><span class="p">,</span> <span class="mi">22</span><span class="p">:</span><span class="mi">37</span><span class="p">:</span><span class="mi">02</span><span class="p">)</span> <span class="p">[</span><span class="n">MSC</span> <span class="n">v</span><span class="mf">.1924</span> <span class="mi">64</span> <span class="n">bit</span> <span class="p">(</span><span class="n">AMD64</span><span class="p">)]</span> <span class="n">on</span> <span class="n">win32</span>
+<span class="n">Type</span> <span class="s2">&quot;help&quot;</span><span class="p">,</span> <span class="s2">&quot;copyright&quot;</span><span class="p">,</span> <span class="s2">&quot;credits&quot;</span> <span class="ow">or</span> <span class="s2">&quot;license&quot;</span> <span class="k">for</span> <span class="n">more</span> <span class="n">information</span><span class="o">.</span>
+<span class="o">&gt;&gt;&gt;</span>
+</pre></div>
+</div>
+<p>注意，某些系统可能需要你输入其他别名才可以进入，例如 <code class="docutils literal notranslate"><span class="pre">python3</span></code>，<code class="docutils literal notranslate"><span class="pre">py</span></code> 等。</p>
+<p>你可以在 <code class="docutils literal notranslate"><span class="pre">&gt;&gt;&gt;</span></code> 后面输入 Python 代码，尝试练习课程中介绍过的一些表达式。</p>
+<p>退出解释器，可以输入 <code class="docutils literal notranslate"><span class="pre">exit()</span></code> 函数。也可以使用终端快捷键，例如 PowerShell 可以输入 <code class="docutils literal notranslate"><span class="pre">Ctrl-Z</span></code>；macOS 终端可以输入 <code class="docutils literal notranslate"><span class="pre">Ctrl-D</span></code>。</p>
+</section>
+<section id="id5">
+<h3>用户目录<a class="headerlink" href="#id5" title="Link to this heading">#</a></h3>
+<p>打开终端时，默认情况下，你应该处在用户目录，即环境变量 <code class="docutils literal notranslate"><span class="pre">HOME</span></code> 表示的路径。PowerShell 会直接显示当前的路径，例如 <code class="docutils literal notranslate"><span class="pre">PS</span> <span class="pre">C:\Users\cs100</span></code>。</p>
+<p>macOS 终端会显示 <code class="docutils literal notranslate"><span class="pre">~</span></code> 符号，该符号通常可以替代 <code class="docutils literal notranslate"><span class="pre">HOME</span></code> 变量。在 macOS 终端可以输入 <code class="docutils literal notranslate"><span class="pre">echo</span> <span class="pre">$HOME</span></code> 显示用户目录的路径。</p>
 </section>
 </section>
 </section>
@@ -265,8 +301,10 @@
             <ul>
 <li><a class="reference internal" href="#">实验 0：环境搭建</a><ul>
 <li><a class="reference internal" href="#id2">初始文件</a></li>
-<li><a class="reference internal" href="#id3">软件安装</a><ul>
-<li><a class="reference internal" href="#id4">终端</a></li>
+<li><a class="reference internal" href="#python">任务一：安装 Python</a></li>
+<li><a class="reference internal" href="#id3">任务二：使用终端</a><ul>
+<li><a class="reference internal" href="#id4">Python 解释器</a></li>
+<li><a class="reference internal" href="#id5">用户目录</a></li>
 </ul>
 </li>
 </ul>
