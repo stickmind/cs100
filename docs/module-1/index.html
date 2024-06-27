@@ -1,17 +1,20 @@
 <!doctype html>
-<html class="no-js" lang="zh-CN" data-content_root="./">
+<html class="no-js" lang="zh-CN" data-content_root="../">
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
-    <meta name="color-scheme" content="light dark"><link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="#" />
+    <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="next" title="第二讲 函数" href="../02-functions/index.html" /><link rel="prev" title="实验 0：环境搭建" href="../01-introduction/lab00/index.html" />
 
     
-    <link rel="shortcut icon" href="_static/favicon.ico"/><title>Search - CS100: SICP</title><link rel="stylesheet" type="text/css" href="_static/pygments.css?v=a746c00c" />
-    <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?v=135e06be" />
-    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="_static/tabs.css?v=4c969af8" />
-    <link rel="stylesheet" type="text/css" href="_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
-    <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?v=36a5483c" />
-    <link rel="stylesheet" type="text/css" href="_static/pied-piper-admonition.css?v=e32e2275" />
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+        <title>模块一 用函数构建抽象 - CS100: SICP</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?v=135e06be" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/tabs.css?v=4c969af8" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo-extensions.css?v=36a5483c" />
+    <link rel="stylesheet" type="text/css" href="../_static/pied-piper-admonition.css?v=e32e2275" />
     
     
 
@@ -129,7 +132,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="index.html"><div class="brand">CS100: SICP</div></a>
+      <a href="../index.html"><div class="brand">CS100: SICP</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -149,24 +152,24 @@
   <aside class="sidebar-drawer">
     <div class="sidebar-container">
       
-      <div class="sidebar-sticky"><a class="sidebar-brand" href="index.html">
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="../index.html">
   
   
   <span class="sidebar-brand-text">CS100: SICP</span>
   
-</a><form class="sidebar-search-container" method="get" action="#" role="search">
+</a><form class="sidebar-search-container" method="get" action="../search.html" role="search">
   <input class="sidebar-search" placeholder="搜索" name="q" aria-label="Search">
   <input type="hidden" name="check_keywords" value="yes">
   <input type="hidden" name="area" value="default">
 </form>
 <div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
-  <ul>
-<li class="toctree-l1 has-children"><a class="reference internal" href="01-introduction/index.html">第一讲 介绍</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle navigation of 第一讲 介绍</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="01-introduction/lab00/index.html">实验 0：环境搭建</a></li>
+  <ul class="current">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../01-introduction/index.html">第一讲 介绍</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle navigation of 第一讲 介绍</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../01-introduction/lab00/index.html">实验 0：环境搭建</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="module-1/index.html">模块一 用函数构建抽象</a></li>
-<li class="toctree-l1"><a class="reference internal" href="02-functions/index.html">第二讲 函数</a></li>
+<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">模块一 用函数构建抽象</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02-functions/index.html">第二讲 函数</a></li>
 </ul>
 
 </div>
@@ -186,7 +189,8 @@
           <span>返回顶部</span>
         </a>
         <div class="content-icon-container">
-          <div class="theme-toggle-container theme-toggle-content">
+          
+<div class="theme-toggle-container theme-toggle-content">
             <button class="theme-toggle">
               <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
               <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
@@ -200,25 +204,44 @@
           </label>
         </div>
         <article role="main">
-          
-<noscript>
-<div class="admonition error">
-  <p class="admonition-title">Error</p>
-  <p>
-    Please activate JavaScript to enable the search functionality.
-  </p>
-</div>
-</noscript>
-
-<div id="search-results"></div>
+          <section class="tex2jax_ignore mathjax_ignore" id="id1">
+<h1>模块一 用函数构建抽象<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
+<p>本课程讨论的第一个抽象工具是<strong>计算过程</strong>（computational procedure），也可以称之为函数。</p>
+<p>不同的编程语言中，过程的实现有多种形式，例如函数（function）、方法（method）、子例程（subroutine）、处理函数（handler）等等，但是它们都有共有的特性。</p>
+<p>为了实现函数，我们需要</p>
+<ul class="simple">
+<li><p>定义一个基本元素的集合</p></li>
+<li><p>定义一个组合基本元素的规则集合</p></li>
+</ul>
+<p>利用基本元素和规则可以抽象出更复杂的结构，而这些结构如果是通用的，我们可以把它们再次加入基本元素集合。</p>
+<p>每一次抽象都会将细节隐藏在黑盒中，重复这样的构建过程，我们可以创建出非常复杂的计算过程或函数。得益于抽象的强大思想，只要我们可以保证每一步都是正确的，最终的复杂系统将会是设计良好、易于维护和使用、并且可以轻易扩展的。</p>
+</section>
 
         </article>
       </div>
       <footer>
         
         <div class="related-pages">
-          
-          
+          <a class="next-page" href="../02-functions/index.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>下一页</span>
+                </div>
+                <div class="title">第二讲 函数</div>
+              </div>
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="../01-introduction/lab00/index.html">
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>上一页</span>
+                </div>
+                
+                <div class="title">实验 0：环境搭建</div>
+                
+              </div>
+            </a>
         </div>
         <div class="bottom-of-page">
           <div class="left-details">
@@ -239,16 +262,13 @@
       
     </aside>
   </div>
-</div><script src="_static/documentation_options.js?v=7d86a446"></script>
-    <script src="_static/doctools.js?v=888ff710"></script>
-    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
-    <script src="_static/scripts/furo.js?v=32e29ea5"></script>
-    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
-    <script src="_static/copybutton.js?v=f281be69"></script>
-    <script src="_static/tabs.js?v=3ee01567"></script>
-    <script src="_static/design-tabs.js?v=36754332"></script>
-    
-<script src="_static/searchtools.js"></script>
-<script src="_static/language_data.js"></script>
-<script src="searchindex.js"></script></body>
+</div><script src="../_static/documentation_options.js?v=7d86a446"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/scripts/furo.js?v=32e29ea5"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/tabs.js?v=3ee01567"></script>
+    <script src="../_static/design-tabs.js?v=36754332"></script>
+    </body>
 </html>

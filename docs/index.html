@@ -3,11 +3,11 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="第一讲 介绍" href="01_introduction/index.html" />
+<link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="第一讲 介绍" href="01-introduction/index.html" />
 
     
     <link rel="shortcut icon" href="_static/favicon.ico"/>
-        <title>CS100：Python 编程方法学</title>
+        <title>CS100: SICP</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=a746c00c" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?v=135e06be" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
@@ -132,7 +132,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="#"><div class="brand">CS100：Python 编程方法学</div></a>
+      <a href="#"><div class="brand">CS100: SICP</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -155,7 +155,7 @@
       <div class="sidebar-sticky"><a class="sidebar-brand" href="#">
   
   
-  <span class="sidebar-brand-text">CS100：Python 编程方法学</span>
+  <span class="sidebar-brand-text">CS100: SICP</span>
   
 </a><form class="sidebar-search-container" method="get" action="search.html" role="search">
   <input class="sidebar-search" placeholder="搜索" name="q" aria-label="Search">
@@ -164,11 +164,12 @@
 </form>
 <div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
   <ul>
-<li class="toctree-l1 has-children"><a class="reference internal" href="01_introduction/index.html">第一讲 介绍</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle navigation of 第一讲 介绍</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="01_introduction/lab00/index.html">实验 0：环境搭建</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="01-introduction/index.html">第一讲 介绍</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle navigation of 第一讲 介绍</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="01-introduction/lab00/index.html">实验 0：环境搭建</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="02_functions/index.html">第二讲 函数</a></li>
+<li class="toctree-l1"><a class="reference internal" href="module-1/index.html">模块一 用函数构建抽象</a></li>
+<li class="toctree-l1"><a class="reference internal" href="02-functions/index.html">第二讲 函数</a></li>
 </ul>
 
 </div>
@@ -205,18 +206,29 @@
         <article role="main">
           <section class="tex2jax_ignore mathjax_ignore" id="id1">
 <h1>前言<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
+<div class="toctree-wrapper compound">
+</div>
 <blockquote>
 <div><p>声明：大部分资源来自官网公开资料，版权归原作者所有。</p>
 </div></blockquote>
-<p>本课程《CS100：Python 编程方法学》是计算机科学的第一门课程，关注的重点是<strong>抽象</strong>（abstraction）概念，这将鼓励程序员在<strong>问题</strong>（problem）层面进行思考，而不是拘泥于计算机硬件（computer hardware）的底层操作。</p>
-<p>进阶课《<a class="reference external" href="https://cs101.stickmind.com/">CS101：C++ 编程抽象思维</a>》参考了斯坦福大学 CS106B 的课程大纲，更多关注更高级的编程思想和软件工程，例如常见的数据结构、算法分析、软件测试等。</p>
-<p>本课程是《<a class="reference external" href="https://www.bilibili.com/video/BV1s3411G7yM/">CS 61A, Fall 2020</a>》的课程伴侣。因不可控因素，CS 61A 官网目前已经无法访问。整理该课程的目的是为了方便大家进行编程入门相关内容的学习。</p>
-<p>本课程会逐步更新随堂笔记、实验、作业和项目等相关文件，文档说明也会优化为中文版本，并增加一部分知识点和提示。最终，本站包含的内容将会远远大于原版课程内容，方便大家理解和学习。</p>
+<p>《CS100：SICP》讲授<strong>计算之原理</strong>（the principles of computation），完成课程后，你将能够解释编程语言的基本方法，并将其用于分析<strong>计算系统</strong>（computational systems），同时你也应该能够使用计算思维对问题进行抽象。</p>
+<p>课程关注的重点是<strong>抽象</strong>（abstraction），这将鼓励程序员在<strong>问题</strong>（problem）层面进行思考，而不是拘泥于计算机硬件（computer hardware）的底层操作。</p>
+<p>本课程算是计算机科学中较为特殊的课程，不仅适合没有编程经验的新手，对于拥有多年编程经验的熟手，也能从中获取很多真知灼见。以现今流行的本科课程体系来看，课程包含的内容涵盖了从入门到进阶的多个主题，其教授的思想将影响程序员整个职业生涯。</p>
+<p>本课程可以算是《<a class="reference external" href="https://www.bilibili.com/video/BV1s3411G7yM/">UCB CS 61A</a>》和《<a class="reference external" href="https://ocw.mit.edu/courses/6-001-structure-and-interpretation-of-computer-programs-spring-2005/">MIT 6.001 SICP</a>》的课程伴侣，整理该课程的目的是为了方便大家进行编程入门相关内容的学习。</p>
+<p>课程网站会逐步更新随堂笔记、实验、作业和项目等相关文件，文档说明也会优化为中文版本，并增加一部分知识点和提示。最终，本站包含的内容将会远远大于原版课程内容，方便大家理解和学习。</p>
 <section id="id2">
 <h2>参考教材<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
-<p>《<a class="reference external" href="https://www.composingprograms.com/">Composing Programs</a>》, 一本使用 Python 改写的 <a class="reference external" href="https://book.douban.com/subject/1148282/">SICP</a></p>
-<div class="toctree-wrapper compound">
-</div>
+<ul class="simple">
+<li><p>《<a class="reference external" href="https://web.mit.edu/6.001/6.037/sicp.pdf">SICP, 2nd</a>》，原汁原味，其思想将影响程序员整个职业生涯</p></li>
+<li><p>《<a class="reference external" href="https://www.composingprograms.com/">Composing Programs</a>》，用 Python 改写的 <a class="reference external" href="https://book.douban.com/subject/1148282/">SICP</a>，由于 CS 61A 定位本科一年级入门课，或许并没有完美地展现原版 SICP 的精髓</p></li>
+</ul>
+</section>
+<section id="id3">
+<h2>进阶课程<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>《<a class="reference external" href="https://cs101.stickmind.com/">CS101：C++ 编程抽象思维</a>》参考了 Stanford CS106B 的课程大纲，关注更高级的编程思想和软件工程，例如常见的数据结构、算法分析、软件测试等。</p></li>
+<li><p>《<a class="reference external" href="https://cs102.stickmind.com/">CS102：计算机组成与系统</a>》参考了 Stanford CS107 和 CMU 15-213 的课程大纲，从软件的视角揭秘计算机的底层原理，为操作系统和网络等高阶课程打下坚实的基础。</p></li>
+</ul>
 </section>
 </section>
 
@@ -225,7 +237,7 @@
       <footer>
         
         <div class="related-pages">
-          <a class="next-page" href="01_introduction/index.html">
+          <a class="next-page" href="01-introduction/index.html">
               <div class="page-info">
                 <div class="context">
                   <span>下一页</span>
@@ -263,6 +275,7 @@
             <ul>
 <li><a class="reference internal" href="#">前言</a><ul>
 <li><a class="reference internal" href="#id2">参考教材</a></li>
+<li><a class="reference internal" href="#id3">进阶课程</a></li>
 </ul>
 </li>
 </ul>

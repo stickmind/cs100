@@ -3,11 +3,11 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" /><link rel="next" title="第二讲 函数" href="../../02_functions/index.html" /><link rel="prev" title="第一讲 介绍" href="../index.html" />
+<link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" /><link rel="next" title="模块一 用函数构建抽象" href="../../module-1/index.html" /><link rel="prev" title="第一讲 介绍" href="../index.html" />
 
     
     <link rel="shortcut icon" href="_static/favicon.ico"/>
-        <title>实验 0：环境搭建 - CS100：Python 编程方法学</title>
+        <title>实验 0：环境搭建 - CS100: SICP</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=a746c00c" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=135e06be" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
@@ -132,7 +132,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="../../index.html"><div class="brand">CS100：Python 编程方法学</div></a>
+      <a href="../../index.html"><div class="brand">CS100: SICP</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -155,7 +155,7 @@
       <div class="sidebar-sticky"><a class="sidebar-brand" href="../../index.html">
   
   
-  <span class="sidebar-brand-text">CS100：Python 编程方法学</span>
+  <span class="sidebar-brand-text">CS100: SICP</span>
   
 </a><form class="sidebar-search-container" method="get" action="../../search.html" role="search">
   <input class="sidebar-search" placeholder="搜索" name="q" aria-label="Search">
@@ -168,7 +168,8 @@
 <li class="toctree-l2 current current-page"><a class="current reference internal" href="#">实验 0：环境搭建</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../02_functions/index.html">第二讲 函数</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../module-1/index.html">模块一 用函数构建抽象</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../02-functions/index.html">第二讲 函数</a></li>
 </ul>
 
 </div>
@@ -209,7 +210,7 @@
 <p>实验文档较长，但是大多是一些安装操作以及一些使用说明。熟练使用这些工具，可以更好地帮助你完成课程内容。</p>
 <section id="id2">
 <h2>初始文件<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
-<p>下载文件 <a class="reference download internal" download="" href="../../_downloads/ef72436b87beece632480fccb0885cfc/lab00.zip"><span class="xref download myst">lab00.zip</span></a>，该文件包含实验的初始代码以及用于测试的 <code class="docutils literal notranslate"><span class="pre">Ok</span></code> 工具。</p>
+<p>下载文件 <a class="reference download internal" download="" href="../../_downloads/b8b806f2ae7b1247a62ce463e4746563/lab00.zip"><span class="xref download myst">lab00.zip</span></a>，该文件包含实验的初始代码以及用于测试的 <code class="docutils literal notranslate"><span class="pre">Ok</span></code> 工具。</p>
 </section>
 <section id="python">
 <h2>任务一：安装 Python<a class="headerlink" href="#python" title="Link to this heading">#</a></h2>
@@ -315,14 +316,11 @@
 </section>
 <section id="id10">
 <h2>任务三：Python 基础<a class="headerlink" href="#id10" title="Link to this heading">#</a></h2>
-<section id="id11">
-<h3>表达式和语句<a class="headerlink" href="#id11" title="Link to this heading">#</a></h3>
 <p>程序由表达式和语句构成。表达式（expression）是一个代码片段，但其本质是一个<strong>值</strong>；语句（statement）由一行或多行代码构成，在程序中执行具体的<strong>动作</strong>。</p>
 <p>在 Python 解释器中输入表达式后，其值会显示在下面。当你阅读下面的示例时，可以尝试在你的 Python 解释器中输入。</p>
 <p>在本课程中，你将会学习到多种不同的表达式和语句。但是现在，为了完成本次实验，需要你先探索一部分。</p>
-</section>
-<section id="id12">
-<h3>简单表达式<a class="headerlink" href="#id12" title="Link to this heading">#</a></h3>
+<section id="id11">
+<h3>简单表达式<a class="headerlink" href="#id11" title="Link to this heading">#</a></h3>
 <p>简单表达式（primitive expression）只需要一步就可以完成计算，例如数字和布尔值，这些表达式的值就是其本身：</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="mi">3</span>
 <span class="go">3</span>
@@ -333,8 +331,8 @@
 </pre></div>
 </div>
 </section>
-<section id="id13">
-<h3>算术表达式<a class="headerlink" href="#id13" title="Link to this heading">#</a></h3>
+<section id="id12">
+<h3>算术表达式<a class="headerlink" href="#id12" title="Link to this heading">#</a></h3>
 <p>数字可以和算术运算符进行组合，从而构成更复杂的表达式。</p>
 <p>对于算术运算符，除了加法 <code class="docutils literal notranslate"><span class="pre">+</span></code>（addition），减法 <code class="docutils literal notranslate"><span class="pre">-</span></code>（subtraction），乘法 <code class="docutils literal notranslate"><span class="pre">*</span></code>（multiplication），求幂 <code class="docutils literal notranslate"><span class="pre">**</span></code>（exponentiation），还有三种不同的除法运算符需要牢记：</p>
 <ul class="simple">
@@ -354,8 +352,8 @@
 </pre></div>
 </div>
 </section>
-<section id="id14">
-<h3>赋值语句<a class="headerlink" href="#id14" title="Link to this heading">#</a></h3>
+<section id="id13">
+<h3>赋值语句<a class="headerlink" href="#id13" title="Link to this heading">#</a></h3>
 <p>赋值语句包含一个变量名和一个表达式。计算表达式，将值通过赋值运算符 <code class="docutils literal notranslate"><span class="pre">=</span></code> 绑定到左边的变量名，从而改变程序的状态。</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">a</span> <span class="o">=</span> <span class="p">(</span><span class="mi">100</span> <span class="o">+</span> <span class="mi">50</span><span class="p">)</span> <span class="o">//</span> <span class="mi">2</span>
 </pre></div>
@@ -367,6 +365,128 @@
 </div>
 </section>
 </section>
+<section id="id14">
+<h2>任务四：如何完成作业<a class="headerlink" href="#id14" title="Link to this heading">#</a></h2>
+<section id="id15">
+<h3>解锁测试<a class="headerlink" href="#id15" title="Link to this heading">#</a></h3>
+<p>实验的一个练习是预测 Python 解释器是如何执行的。输入以下命令，开始本小节的练习：</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">ok</span> <span class="o">-</span><span class="n">q</span> <span class="n">python</span><span class="o">-</span><span class="n">basics</span> <span class="o">-</span><span class="n">u</span> <span class="o">--</span><span class="n">local</span>
+</pre></div>
+</div>
+<p><strong>注意添加 <code class="docutils literal notranslate"><span class="pre">--local</span></code> 命令行选项，避免 <code class="docutils literal notranslate"><span class="pre">ok</span></code> 工具连接任何课程服务器</strong>。测试过程中，如果想强制退出 Python 解释器，可以使用快捷键 <code class="docutils literal notranslate"><span class="pre">Ctrl-C</span></code>。</p>
+<p>根据提示信息，需要你输入多个表达式的值。你必须正确输入才能够继续下一个表达式，但是输入错误也没有任何惩罚。</p>
+<p>由于没有连接任何课程服务器，所以这些作答不会有任何评分。自学过程需要你同时扮演一位老师的角色，自己评估个人的学习状况。</p>
+</section>
+<section id="id16">
+<h3>理解问题<a class="headerlink" href="#id16" title="Link to this heading">#</a></h3>
+<p>实验也包含一些函数填空练习。使用文本编辑器打开 <code class="docutils literal notranslate"><span class="pre">lab00.py</span></code> 文件，你应该会看到如下代码：</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">twenty_twenty_one</span><span class="p">():</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Come up with the most creative expression that evaluates to 2021,</span>
+<span class="sd">    using only numbers and the +, *, and - operators.</span>
+
+<span class="sd">    &gt;&gt;&gt; twenty_twenty_one()</span>
+<span class="sd">    2021</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">______</span>
+</pre></div>
+</div>
+<p>三引号 <code class="docutils literal notranslate"><span class="pre">&quot;&quot;&quot;</span></code> 组成的行称为<strong>文档字符串</strong>（docstring），用于描述当前函数的功能。在本课程中，当你编写代码之前，一定要先阅读这些文档。</p>
+<p>以符号 <code class="docutils literal notranslate"><span class="pre">&gt;&gt;&gt;</span></code> 开头的行称为<strong>文档测试</strong>（doctests）。类比 Python 解释器，你输入的表达式也在 <code class="docutils literal notranslate"><span class="pre">&gt;&gt;&gt;</span></code> 后面，输出会打印在该行的下面。文档测试通过一些真实的 Python 代码来解释该函数的作用。这些测试回答了这样的问题：“如果输入这些 Python 代码，期望的输出应该是什么？”</p>
+<p>在 <code class="docutils literal notranslate"><span class="pre">twenty_twenty_one</span></code> 函数中，</p>
+<ul class="simple">
+<li><p>文档字符串告诉我们“Come up with the most creative expression that evaluates to 2021”，但是你只能使用数字和算术运算符 <code class="docutils literal notranslate"><span class="pre">+</span></code>，<code class="docutils literal notranslate"><span class="pre">-</span></code>，<code class="docutils literal notranslate"><span class="pre">*</span></code>。</p></li>
+<li><p>文档测试表明，当调用函数 <code class="docutils literal notranslate"><span class="pre">twenty_twenty_one()</span></code> 时，返回结果将是值 <code class="docutils literal notranslate"><span class="pre">2021</span></code>。</p></li>
+</ul>
+<p>除非你想添加自己的测试，否则不要修改文档字符串！只有在作业和项目中，才需要你编辑这些内容。</p>
+</section>
+<section id="id17">
+<h3>编写代码<a class="headerlink" href="#id17" title="Link to this heading">#</a></h3>
+<p>一旦你理解了问题，那么就可以准备编写代码了。你应该使用正确的表达式替换掉 <code class="docutils literal notranslate"><span class="pre">return</span> <span class="pre">______</span></code> 中的下划线。你能想出哪些最具创意的表达式？</p>
+</section>
+<section id="id18">
+<h3>运行测试<a class="headerlink" href="#id18" title="Link to this heading">#</a></h3>
+<p>本课程使用 <code class="docutils literal notranslate"><span class="pre">ok</span></code> 工具测试我们的代码。每个实验和作业中，都已经包含该测试工具。</p>
+<p>回到终端，确保当前目录是在 <code class="docutils literal notranslate"><span class="pre">lab00</span></code>，然后使用 <code class="docutils literal notranslate"><span class="pre">ls</span></code> 命令查看该目录的内容，注意以下三个文件：</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">lab00.py</span></code>：需要你编辑的初始代码文件</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ok</span></code>：测试工具</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">lab00.ok</span></code>：测试工具的配置文件</p></li>
+</ul>
+<p>现在执行以下命令测试我们的项目：</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">ok</span> <span class="o">--</span><span class="n">local</span>
+</pre></div>
+</div>
+<p>修改初始代码，直到测试通过。如果测试通过，终端将会显示以下提示信息：</p>
+<div class="highlight-txt notranslate"><div class="highlight"><pre><span></span>=====================================================================
+Assignment: Lab 0
+OK, version v1.18.1
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Test summary
+    3 test cases passed! No cases failed.
+</pre></div>
+</div>
+</section>
+<section id="id19">
+<h3>自助评分<a class="headerlink" href="#id19" title="Link to this heading">#</a></h3>
+<p>由于没有使用课程服务器，我们无法通过网站管理自己的成绩。但是 <code class="docutils literal notranslate"><span class="pre">ok</span></code> 工具也提供了评分的选项，可以通过以下命令进行评分：</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">ok</span> <span class="o">--</span><span class="n">score</span> <span class="o">--</span><span class="n">local</span>
+</pre></div>
+</div>
+<p>根据测试情况，终端将会显示以下评分信息：</p>
+<div class="highlight-txt notranslate"><div class="highlight"><pre><span></span>=====================================================================
+Assignment: Lab 0
+OK, version v1.18.1
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Scoring tests
+
+---------------------------------------------------------------------
+Doctests for twenty_twenty_one
+
+&gt;&gt;&gt; from lab00 import *
+&gt;&gt;&gt; twenty_twenty_one()
+2021
+Score: 1.0/1
+
+---------------------------------------------------------------------
+Python Basics
+    Passed: 0
+    Failed: 0
+[k..........] 0.0% passed
+
+---------------------------------------------------------------------
+Point breakdown
+    twenty_twenty_one: 1.0/1
+    Python Basics: 0.0/0
+
+Score:
+    Total: 1.0
+</pre></div>
+</div>
+</section>
+</section>
+<section id="id20">
+<h2>附：Python 命令行选项<a class="headerlink" href="#id20" title="Link to this heading">#</a></h2>
+<p>如果你想运行一个 Python 程序，也可以通过命令行运行。不使用命令行选项执行 Python 代码文件，程序执行完将返回到命令行。</p>
+<p>在 <code class="docutils literal notranslate"><span class="pre">lab00.py</span></code> 文件末尾添加一些打印语句，例如 <code class="docutils literal notranslate"><span class="pre">print(2021)</span></code>，执行以下命令查看该程序的运行结果：</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">lab00</span><span class="o">.</span><span class="n">py</span>
+</pre></div>
+</div>
+<p>此外，你也可以使用一些命令行选项来进一步检查代码。例如选项 <code class="docutils literal notranslate"><span class="pre">-m</span> <span class="pre">doctest</span></code> 可以执行指定文件中的文档测试。</p>
+<p>尝试修改 <code class="docutils literal notranslate"><span class="pre">lab00.py</span></code> 文件，将 <code class="docutils literal notranslate"><span class="pre">twenty_twenty_one()</span></code> 的返回值改成一个错误值，然后执行以下命令观察结果：</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="o">-</span><span class="n">m</span> <span class="n">doctest</span> <span class="n">lab00</span><span class="o">.</span><span class="n">py</span>
+</pre></div>
+</div>
+<p>如果你想了解更多 Python 命令行选项，可以查看<a class="reference external" href="https://docs.python.org/3/using/cmdline.html"> Python 文档</a>。</p>
+<hr class="docutils" />
+<p>完！</p>
+</section>
 </section>
 
         </article>
@@ -374,12 +494,12 @@
       <footer>
         
         <div class="related-pages">
-          <a class="next-page" href="../../02_functions/index.html">
+          <a class="next-page" href="../../module-1/index.html">
               <div class="page-info">
                 <div class="context">
                   <span>下一页</span>
                 </div>
-                <div class="title">第二讲 函数</div>
+                <div class="title">模块一 用函数构建抽象</div>
               </div>
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
             </a>
@@ -433,12 +553,20 @@
 </ul>
 </li>
 <li><a class="reference internal" href="#id10">任务三：Python 基础</a><ul>
-<li><a class="reference internal" href="#id11">表达式和语句</a></li>
-<li><a class="reference internal" href="#id12">简单表达式</a></li>
-<li><a class="reference internal" href="#id13">算术表达式</a></li>
-<li><a class="reference internal" href="#id14">赋值语句</a></li>
+<li><a class="reference internal" href="#id11">简单表达式</a></li>
+<li><a class="reference internal" href="#id12">算术表达式</a></li>
+<li><a class="reference internal" href="#id13">赋值语句</a></li>
 </ul>
 </li>
+<li><a class="reference internal" href="#id14">任务四：如何完成作业</a><ul>
+<li><a class="reference internal" href="#id15">解锁测试</a></li>
+<li><a class="reference internal" href="#id16">理解问题</a></li>
+<li><a class="reference internal" href="#id17">编写代码</a></li>
+<li><a class="reference internal" href="#id18">运行测试</a></li>
+<li><a class="reference internal" href="#id19">自助评分</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id20">附：Python 命令行选项</a></li>
 </ul>
 </li>
 </ul>
